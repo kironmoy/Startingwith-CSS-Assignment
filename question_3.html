@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        .container{
+            border: 2px solid  gray;
+            text-align: center;
+            border-radius: 10px;
+        }
+        input.submit{
+            display: inline-block;
+            color: rgb(226, 236, 236);
+            background-color: orangered;
+            border-radius: 5px ;
+           border-color: white;
+           margin-top: 15px;
+           margin-bottom: 15px;
+           opacity: 80%;
+        }
+        input.first_name{
+            border-color: whitesmoke;
+            background-color: limegreen;
+            color: wheat;
+        }
+        ::placeholder{
+            color: whitesmoke;
+        }
+        input.last_name{
+            border-color: whitesmoke;
+        background-color: orange;
+        color: wheat;
+        }
+       
+        input.email_id_1{
+            border-color: whitesmoke;
+            background-color: yellow;
+            color: wheat;
+        }
+        input.email_id_2{
+            color: wheat;
+            border-color: whitesmoke;
+            background-color: darkgreen;
+        }
+        input.password{
+            border-color: whitesmoke;
+background-color: purple;
+color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>Regsitration Form</h4>
+        <form>
+            <label for="firstname" >First name: </label>
+            <input type="text"id="firstname" name="firstname"  required placeholder="Enter first name" class="first_name">
+            <br>
+            <br>
+            <label for="lastname">Last name: </label>
+            <input type="text" id="lastname" name="lastname"  class="last_name"  placeholder="enter last name" required>
+            <br>
+            <br>
+            <label for="email">Enter Email ID: </label>
+            <input type="email" name="email" class="email_id_1" id="email"  placeholder="enter email id" required>
+            <br>
+            <br>
+            <label for="email_reconfirm">Confirm email id: </label>
+            <input type="email" name="email_reconfirm" class="email_id_2" id="email_reconfirm" required placeholder="Re confirm email id  ">
+            <br>
+            <br>
+            <label for="password">Enter Password: </label>
+            <input type="password" name="password" id="password" class="password" required placeholder="********">
+            <br>
+            <br>
+            <label for="radio"> Select Gender</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+          
+           
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <label><a href=""> Terms and Condition</a></label>
+           
+            <input type="checkbox" required>
+            <br>
+
+                        <input type="submit" value="Register" class="submit">
+        </form>
+    </div>
+    
+</body>
+</html>
